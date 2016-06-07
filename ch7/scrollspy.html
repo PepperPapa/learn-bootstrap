@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scrollspy plugin demo</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.6/dist/css/bootstrap.css">
+  <style>
+    body {
+      padding-top: 70px;
+      padding-left: 10px;
+    }
+    .scrollspy {
+      width: 520px;
+      height: 300px;
+      overflow: scroll;
+    }
+    .scrollspy-example img { width: 500px; }
+  </style>
+</head>
+<body>
+  <div id="menu" class="navbar-nav navbar-default navbar-fixed-top">
+    <ul class="nav navbar-nav">
+      <li><a href="#1">列表1</a></li>
+      <li><a href="#2">列表2</a></li>
+      <li class="dropdown"><a href="#" data-toggle="dropdown">下拉列表
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#3">列表3</a></li>
+          <li><a href="#4">列表4</a></li>
+          <li class="divider"></li>
+          <li><a href="#5">列表5</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div> <!-- navbar -->
+
+  <div class="scrollspy">
+    <h3 id="1">列表1</h3>
+    <p><img src="images/1.jpg" alt="1"></p>
+    <h3 id="2">列表2</h3>
+    <p><img src="images/2.jpg" alt="2"></p>
+    <h3 id="3">列表3</h3>
+    <p><img src="images/3.jpg" alt="3"></p>
+    <h3 id="4">列表4</h3>
+    <p><img src="images/4.jpg" alt="4"></p>
+    <h3 id="5">列表5</h3>
+    <p><img src="images/5.jpg" alt="5"></p>
+  </div>
+
+  <script src="../js/jquery-2.2.3.js"></script>
+  <script src="../bootstrap-3.3.6/dist/js/bootstrap.js"></script>
+
+  <!-- javascript 方式调用插件 -->
+  <script>
+
+  </script>
+</body>
+</html>

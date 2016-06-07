@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal plugin demo</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.6/dist/css/bootstrap.css">
+</head>
+<body>
+  <!-- 如果html方式调用modal插件则a元素href=“#” 需替换为 href=“#myModal” -->
+  <a href="#" class="btn btn-default" data-toggle="modal">弹出对话框</a>
+  <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modaltest">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title">标题</h3>
+        </div>
+        <div class="modal-body">
+          <p>正文&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-info" data-dismiss="modal">关闭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/jquery-2.2.3.js"></script>
+  <script src="../bootstrap-3.3.6/dist/js/bootstrap.js"></script>
+
+  <!-- javascript 方式调用modal对话框插件 -->
+  <script>
+    // 响应modal插件的事件
+    $("#myModal").on("show.bs.modal", function() {
+      alert("对话框开始打开。");
+    });
+    $("#myModal").on("hide.bs.modal", function() {
+      alert("对话框开始关闭。");
+    });
+
+
+    $("#myModal").modal({
+      backdrop: false,
+      show: true
+    });
+    $(".btn").click(function() {
+      $("#myModal").modal("toggle");
+    });
+  </script>
+</body>
+</html>
