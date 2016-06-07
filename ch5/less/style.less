@@ -1,0 +1,44 @@
+@colors: #333;
+// 命名空间
+#namesp {
+  .div1 {
+    color: @colors;
+    font-weight: bold;
+    background-color: #ccc;
+  }
+}
+.div1 {
+  #namesp > .div1;
+}
+.div3 {
+  border: 1px solid #222;
+  #namesp > .div1;
+}
+@fonts: 12px;
+.div4 {
+  border: 1px solid #333;
+  padding: 10px;
+  div {
+    background-color: yellow;
+    span {
+      color: white;
+    }
+  }
+  span {
+    background-color: @colors;
+    font-size: @fonts * 2;
+  }
+}
+// 这里只是一个样式类，并不对.div5生效，如需生效需要另外调用
+.div5(@widths: 5px) {
+  color: red;
+  border-style: solid;
+  border-color: @colors;
+  border-width: @widths;
+}
+.div5 {
+  .div5(2px);
+}
+.div6 {
+  .div5(10px);
+}
