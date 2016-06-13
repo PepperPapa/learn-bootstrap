@@ -14,9 +14,13 @@
       width: 200px;
       background-color: #fff;
     }
+    img {
+      width: 100%;
+      height: auto;
+    }
   </style>
 </head>
-<body data-spy="scroll" data-target="#navbar" data-offset="0">
+<body data-target="#navbar" data-offset="0">
   <div id="navbar">
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#1">列表1</a></li>
@@ -51,7 +55,16 @@
 
   <!-- javascript 方式调用插件 -->
   <script>
-
+    $(function() {
+      $("body").scrollspy();
+      $("body").on("activate.bs.scrollspy", function(e) {
+        if (e.target && $(e.target).hasClass("dropdown")) {
+          $(e.target).children("ul.dropdown-menu").css("display", "block");
+        } else {
+          $(e.target).parent().find("ul.dropdown-menu").css("display", "none");
+        }
+      })
+    });
   </script>
 </body>
 </html>

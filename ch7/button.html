@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert plugin demo</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.6/dist/css/bootstrap.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <button type="button" class="btn btn-primary" data-toggle="button">激活按钮</button>
+  <hr>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary"><input type="checkbox" autocomplete="off">test1</input></label>
+    <label class="btn btn-primary"><input type="checkbox" autocomplete="off">test2</input></label>
+    <label class="btn btn-primary"><input type="checkbox" autocomplete="off">test3</input></label>
+    <label class="btn btn-primary"><input type="checkbox" autocomplete="off">test4</input></label>
+  </div>
+  <hr>
+  <div class="btn-group" data-toggle="buttons">
+    <label for=""><input type="radio" autocomplete="off">boy</input></label>
+    <label for=""><input type="radio" autocomplete="off">girl</input></label>
+  </div>
+  <script src="../js/jquery-2.2.3.js"></script>
+  <script src="../bootstrap-3.3.6/dist/js/bootstrap.js"></script>
+
+  <!-- javascript 方式调用插件 -->
+  <script>
+    $(function() {
+      $(".btn[data-toggle='button']").click(function() {
+        $(this).button("loading");
+      })
+    });
+  </script>
+</body>
+</html>

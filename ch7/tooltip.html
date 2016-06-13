@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tooltip plugin demo</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.6/dist/css/bootstrap.css">
+  <style>
+    html, body {
+      margin: 20px 20px;
+      height: 100%;
+    }
+    a {
+      display: block;
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" title="百度一下，你就知道" data-placement="top"><img src="images/logo.gif" alt=""></a>
+  <a href="#" title="百度一下，你就知道" data-placement="right"><img src="images/logo.gif" alt=""></a>
+  <a href="#" title="百度一下，你就知道" data-placement="bottom"><img src="images/logo.gif" alt=""></a>
+  <a href="#" title="百度一下，你就知道" data-placement="left"><img src="images/logo.gif" alt=""></a>
+  <script src="../js/jquery-2.2.3.js"></script>
+  <script src="../bootstrap-3.3.6/dist/js/bootstrap.js"></script>
+
+  <!-- javascript 方式调用插件 -->
+  <script>
+    $(function() {
+      $("a").mouseover(function() {
+        $(this).tooltip("show");
+      });
+    });
+  </script>
+</body>
+</html>

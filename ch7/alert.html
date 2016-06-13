@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert plugin demo</title>
+  <link rel="stylesheet" href="../bootstrap-3.3.6/dist/css/bootstrap.css">
+  <style>
+
+  </style>
+</head>
+<body>
+  <div class="alert fade in">
+    <button type="button" class="close">&times;</button>
+    <strong>警告框标题</strong> 说明文字。
+  </div>
+
+  <script src="../js/jquery-2.2.3.js"></script>
+  <script src="../bootstrap-3.3.6/dist/js/bootstrap.js"></script>
+
+  <!-- javascript 方式调用插件 -->
+  <script>
+    $(function() {
+      $(".close").click(function() {
+        $(this).alert("close");
+      });
+    });
+  </script>
+</body>
+</html>
