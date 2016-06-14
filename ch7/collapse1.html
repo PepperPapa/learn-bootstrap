@@ -15,7 +15,7 @@
     <div class="panel panel-default">
       <div class="panel-heading" role="tab" id="headingOne">
         <h4 class="panel-title">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <a class="collapsed" role="button" data-toggle="" data-parent="#" href="#" aria-expanded="true" aria-controls="collapseOne">
             Collapsible Group Item #1
           </a>
         </h4>
@@ -29,7 +29,7 @@
     <div class="panel panel-default">
       <div class="panel-heading" role="tab" id="headingTwo">
         <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <a class="collapsed" role="button" data-toggle="" data-parent="#" href="#" aria-expanded="false" aria-controls="collapseTwo">
             Collapsible Group Item #2
           </a>
         </h4>
@@ -43,7 +43,7 @@
     <div class="panel panel-default">
       <div class="panel-heading" role="tab" id="headingThree">
         <h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <a class="collapsed" role="button" data-toggle="" data-parent="#" href="#" aria-expanded="false" aria-controls="collapseThree">
             Collapsible Group Item #3
           </a>
         </h4>
@@ -62,7 +62,22 @@
   <!-- javascript 方式调用插件 -->
   <script>
     $(function() {
+      $(".panel-collapse").collapse({
+        parent: "#accordion",
+        toggle: false
+      });
 
+      $(".panel-collapse").on("show.bs.collapse", function(e) {
+        $(e.target).css("background-color", "orange");
+      });
+
+      $(".panel-collapse").on("hide.bs.collapse", function(e) {
+        $(this).css("background-color", "red");
+      });
+
+      $(".collapsed").click(function() {
+        $(this).parent().parent().next().collapse("toggle");
+      });
     });
   </script>
 </body>
