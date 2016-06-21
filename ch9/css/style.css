@@ -1,4 +1,18 @@
-/*login button */
+body {
+  margin-top: 1px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#page-head-right {
+  float: right;
+}
+
+#page-head-right #main-login {
+  height: 40px;
+}
+
+/* login button style */
 .twi-btn-left {
   display: inline-block;
   width: 54px;
@@ -17,10 +31,96 @@
 
 .twi-btn-left span {
   line-height: 40px;
-  text-indent: 6px;
+  text-indent: 6px;   /* 这个需要优化 */
   color: #555;
   display: inline-block;
   width: 32px;
   height: 32px;
   cursor: pointer;
+}
+
+/*register button style*/
+.twi-btn-right {
+  background: url(../images/icons.png) no-repeat -54px -64px;
+  display: inline-block;
+  width: 54px;
+  height: 40px;
+  text-align: center;
+}
+
+.twi-btn-right:hover, twi-btn-right.active {
+  background: url(../images/icons.png) no-repeat -54px -104px;
+}
+
+.twi-btn-right:hover span, .twi-btn-right.active span {
+  color: white;
+}
+
+.twi-btn-right span {
+  text-indent: -6px;
+  color: #555;
+  display: inline-block;
+  line-height: 40px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+#main-menu {
+  float: right;
+  margin-top: 20px;
+  position: relative;
+  clear: both;
+}
+
+#main-menu a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 16px;
+}
+
+#main-menu a:hover {
+  color: #19896b;
+}
+
+#carousel-box {
+  height: 770px;
+}
+
+.carousel-indicators {
+  top: 530px;
+  left: 500px;
+}
+
+.carousel-caption {
+  top: 580px;
+  background-color: #e4e4e4;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel-caption h4, .carousel-caption p {
+  line-height: 20px;
+  color: #333;
+}
+
+.carousel-indicators li {
+  border: 0;
+  background-color: #d4d5d6;
+}
+
+.carousel-indicators .active {
+  background-color: #209e85;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #333;
 }
