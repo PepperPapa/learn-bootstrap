@@ -124,3 +124,43 @@ body {
   text-align: center;
   background-color: #333;
 }
+
+hr.slide_pic {
+  position: relative;
+  top: -220px;   /* 相对其本身应在的位置 */
+  z-index: 1000;
+  border-top: 2px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+hr.slide_h2 {
+  position: relative;
+  top: -160px;
+  z-index: 1000;
+}
+
+.potrait {
+  margin-right: 10px;
+}
+
+.potrait img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.page-header h3 {
+  font-weight: bold;
+}
+
+.page-header a {
+  text-decoration: none;
+}
+
+.quote-author {
+  text-align: right;
+}
+
+.copyright {
+  color: #666;
+  text-align: center;
+}
