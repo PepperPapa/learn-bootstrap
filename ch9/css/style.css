@@ -1,3 +1,4 @@
+/*index.html style*/
 body {
   margin-top: 1px;
   font-size: 13px;
@@ -163,4 +164,32 @@ hr.slide_h2 {
 .copyright {
   color: #666;
   text-align: center;
+}
+
+
+/*news.html style*/
+.topbox {
+  height: 84px;
+  margin-bottom: 0;
+  background-color: #fafafa;
+}
+
+.navbar-collapse {
+  position: relative;
+  top: 32px;
+  left: -16px;
+}
+
+.form-control {
+  height: 2em;
+  border-radius: 20px !important;
+}
+
+.container.menu {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.collapse-menu {
+  float: right;
 }
