@@ -169,7 +169,7 @@ hr.slide_h2 {
 
 /*news.html style*/
 .topbox {
-  height: 84px;
+  min-height: 84px;
   margin-bottom: 0;
   background-color: #fafafa;
 }
@@ -190,6 +190,11 @@ hr.slide_h2 {
   margin-bottom: 6px;
 }
 
-.collapse-menu {
-  float: right;
+#menu {
+  top: 0;
+  width: 100%;
+}
+
+.main-body {
+  background-color: #fafafa;
 }

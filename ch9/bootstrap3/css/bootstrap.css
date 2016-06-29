@@ -1953,6 +1953,7 @@ pre code {
     width: 83.33333333%;
   }
   .col-md-9 {
+    margin-left: 25px;
     width: 75%;
   }
   .col-md-8 {
@@ -4303,9 +4304,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
-  padding: 9px 10px;
-  margin-top: 8px;
+  margin-right: 5px;
+  padding: 8px 10px;
+  margin-top: 5px;
   margin-bottom: 8px;
   background-color: transparent;
   background-image: none;
