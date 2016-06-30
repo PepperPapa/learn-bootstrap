@@ -186,6 +186,7 @@ hr.slide_h2 {
 }
 
 .container.menu {
+  padding-left: 0;
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -193,8 +194,32 @@ hr.slide_h2 {
 #menu {
   top: 0;
   width: 100%;
+  background-color: #e4e4e4;
+  z-index: 1000;
 }
 
 .main-body {
   background-color: #fafafa;
+}
+
+footer {
+  text-align: center;
+}
+
+footer h4 {
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
