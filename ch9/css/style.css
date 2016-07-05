@@ -228,3 +228,120 @@ footer .copyright {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+
+/*teams.html style*/
+.header-top {
+  margin-top: 15px;
+  text-align: center;
+  background-image: url(../images/team2.png);
+  background-repeat: no-repeat;
+  background-position: right -20px;
+}
+
+.header-top small {
+  display: block;
+}
+
+.bgfff {
+  background-color: #fafafa;
+}
+
+.bgfff .col-md-2 {
+  text-align: center;
+}
+
+.bgfff .emblem {
+  width: 80%;
+  height: auto;
+  max-width: 100%;
+}
+
+.team-header {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #209e85;
+}
+
+.team-title {
+  margin: 12px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.team-title .title {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.team-title .leader {
+  margin-right: 12px;
+}
+
+.team-stat p {
+  float: left;
+  margin-right: 36px;
+  font-size: 14px;
+}
+
+.team-stat .stat {
+  color: #49af9b;
+  padding-left: 6px;
+  font-weight: bold;
+}
+
+.tuijian {
+  margin-bottom: 5px;
+}
+
+.tuijian .page-header {
+  margin: 10px 0;
+  padding: 0;
+  border-bottom: 4px solid #dfdfdf;
+}
+
+.tuijian .col-md-2 {
+  padding: 0;
+}
+
+.tuijian .row {
+  margin-left: 0;
+}
+
+.nav-box.tags {
+  line-height: 4em;
+}
+
+.tuijian h5 {
+  margin-top: 0;
+}
+
+.width4 {
+  padding-top: 15px;
+}
+
+.search {
+  margin-bottom: 10px;
+}
+
+.nav-list {
+  padding-right: 24px;
+}
+
+.nav-header {
+  margin-top: 9px;
+  padding-left: 15px;
+  color: #999;
+}
+
+.table-condensed {
+  margin-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+}
+
+.table-condensed img {
+  height: 20px;
+}
