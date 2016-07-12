@@ -345,3 +345,24 @@ footer .copyright {
 .table-condensed img {
   height: 20px;
 }
+
+/*style of top.html*/
+.row_card {
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-stacked li {
+  margin-top: 0;
+  margin-bottom: -1px;
+}
+
+.nav-stacked li a {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.nav-box.menu {
+  width: 360px;
+}
