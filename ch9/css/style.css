@@ -366,3 +366,17 @@ footer .copyright {
 .nav-box.menu {
   width: 360px;
 }
+
+/*market.html page style*/
+.container-fluid.topbox {
+  padding: 0 100px;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.introduction {
+  padding: 0 60px;
+}
+
+.logo {
+  margin-top: 84px;
+}
